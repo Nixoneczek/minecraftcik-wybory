@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; /* Kolor nieba */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Rozkłada elementy na skraju */
+    align-items: center; /* Wyrównuje elementy w pionie */
+    background-color: #005f99; /* Ciemniejszy odcień niebieskiego */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+    padding: 0 20px; /* Odstępy po bokach */
+}
+
+.title {
+    flex-grow: 1; /* Pozwól, aby tytuł zajął wolną przestrzeń */
+    text-align: center; /* Wyrównaj tytuł do środka */
+    color: white;
+    font-size: 24px;
+}
+
+.home-link {
+    color: white; /* Kolor tekstu */
+    text-decoration: none; /* Usuń podkreślenie */
+    font-size: 18px; /* Rozmiar czcionki */
+}
+
+.home-link:hover {
+    color: #ffd700; /* Kolor przy najechaniu (złoty) */
+}
+
+
+.burger-menu {
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-size: 24px;
+}
+
+.menu {
+    display: none; /* Ukryj menu domyślnie */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Ciemne tło z przezroczystością */
+    backdrop-filter: blur(5px); /* Efekt rozmycia */
+    z-index: 999;
+}
+
+.menu-item {
+    color: white; /* Kolor tekstu */
+    font-size: 30px; /* Rozmiar czcionki */
+    display: block; /* Zmienia span na blok */
+    padding: 20px 0; /* Dodaje przestrzeń w pionie */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    cursor: default; /* Zmienia kursor na domyślny */
+}
+
+
+.menu ul {
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s; /* Płynne przejście koloru */
+}
+
+.menu a:hover {
+    color: #ffd700; /* Kolor przy najechaniu (złoty) */
+}
+
+/* Podświetlenie aktywnego linku */
+.menu a.active {
+    font-weight: bold; /* Wyróżnienie aktywnego linku */
+    text-decoration: underline; /* Podkreślenie aktywnego linku */
+}
+
+.content {
+    padding: 80px 20px;
+    backdrop-filter: blur(5px); /* Efekt rozmycia dla treści */
+}
+
+.content h1 {
+    color: #003366; /* Kolor nagłówka */
+}
+
+.section {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Lekko przezroczysty biały */
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px; /* Szerokość maksymalna */
+}
+
+.no-underline {
+    text-decoration: none; /* Usuń podkreślenie */
+    color: inherit; /* Użyj koloru tekstu z rodzica (h2) */
+}
+
+.no-underline:hover {
+    color: #ffd700; /* Kolor przy najechaniu (złoty) */
+}
+
